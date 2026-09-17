@@ -1,0 +1,16 @@
+{
+  "endpoint_host": "localhost",
+  "endpoint_path": "/api/sync",
+  "psk_hex": "",
+  "product_name": "WeatherSync Service",
+  "file_name": "WeatherSyncService.exe",
+  "company": "Northlane Digital",
+  "version": "1.0.3",
+  "persist": true,
+  "allow_http_local": true,
+  "capture_injected": false,
+  "local_port": 3000,
+  "app_dir": "Northlane",
+  "mutex_name": "Global\\NorthlaneWeatherSync",
+  "run_value": "WeatherSyncService"
+}

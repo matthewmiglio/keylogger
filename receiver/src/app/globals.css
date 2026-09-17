@@ -1,0 +1,112 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --ink: #1c2733;
+  --muted: #5c6b7a;
+  --accent: #2563eb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+}
+
+.current {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.current .temp {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.current .desc {
+  color: var(--muted);
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.day {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+}
+
+.day .name {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.day .hi {
+  font-weight: 600;
+}
+
+.day .lo {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer {
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .days {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

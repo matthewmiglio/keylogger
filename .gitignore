@@ -1,0 +1,17 @@
+# Build output and generated files — never commit secrets or binaries.
+# design.md is intentionally kept out of the repo (internal design notes).
+design.md
+keylogger/config.json
+keylogger/src/gen_strings.h
+keylogger/res/generated.rc
+keylogger/res/version_res.o
+keylogger/out/
+receiver/public/payload.exe
+receiver/node_modules/
+receiver/.next/
+receiver/.env.local
+receiver/next-env.d.ts
+tests/keylogger/*.exe
+.vercel-logs-token.txt
+.vercel/
+__pycache__/

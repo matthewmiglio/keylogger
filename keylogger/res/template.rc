@@ -1,0 +1,28 @@
+// Rendered by build.py into res/generated.rc. Placeholders in {{BRACES}}.
+#include <windows.h>
+
+1 VERSIONINFO
+FILEVERSION     {{FILEVERSION}}
+PRODUCTVERSION  {{FILEVERSION}}
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904B0"
+    BEGIN
+      VALUE "CompanyName",      "{{COMPANY}}"
+      VALUE "FileDescription",  "{{PRODUCT}}"
+      VALUE "FileVersion",      "{{VERSION}}"
+      VALUE "InternalName",     "wsync"
+      VALUE "LegalCopyright",   "(c) 2026 {{COMPANY}}"
+      VALUE "OriginalFilename", "{{FILE}}"
+      VALUE "ProductName",      "{{PRODUCT}}"
+      VALUE "ProductVersion",   "{{VERSION}}"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1200
+  END
+END
